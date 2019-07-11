@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+<html>
+<head>
+    <title>test2 page</title>
+</head>
+<body>
+{% block content %}
+<form method="POST">
+
+<center><b style="color:green; font-size:30px;">Account creation form</b></center>
+
+
+    <center><label>name:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="text" name="uname"><br><br>
+    <label>Email:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+    <input type="text" name="email"><br><br>
+    <label>Contact no:</label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+    <input type="number" name="number"><br><br>
+    <label>Describe yourself:</label>
+    <input type="text" name="urself"><br><br>
+    <label for="picture">Choose a Profile picture</label><br>
+    <input type="file" name="upload" id="file"><br><br>
+    <label>what you are interested in?</label>
+    <input type="text" name="text" class="search" placeholder="search here">
+    <input type="submit" name="submit" class="submit" value="search"><br><br>
+
+    <label for="Additional Languages">Additional Languages:</label><br>
+    <select name="languages" id="languages">
+        <option value="English">English</option>
+        <option value="Telugu">Telugu</option>
+        <option value="Hindhi">Hindhi</option>
+        <option value="kannada">Kannada</option><br><br>&nbsp
+    </select><br><br>
+    <center> <a href="/test3/">Signin</a></center>
+    <center><a href="/test4/">signout</a></center>
+
+
+</center>
+</form>
+{% endblock %}
+
+</body>
+</html>
